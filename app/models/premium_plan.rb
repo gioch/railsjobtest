@@ -9,7 +9,7 @@ class PremiumPlan < ActiveRecord::Base
     self.price_per_month - ( self.price_per_month * @@additional_fee / 100 )
   end
 
-  ## get subscriptions of current premium plane in give date range
+  ## get subscriptions of current premium plan in given date range
   def self.subscriptions_between(start_date, end_date)
     self.first.subscriptions.between_dates(start_date, end_date)
   end
