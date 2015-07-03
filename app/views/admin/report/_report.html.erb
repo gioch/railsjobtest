@@ -1,18 +1,16 @@
-<h1>Past Week</h1>
+<h1>Past 4 Weeks ( <%= weeks_ago %> - <%= current_date %> )</h1>
 
-<%= date %>
-
-<b style="font-size: 20px;">Revenue = <%=  total_revenue_week_ago %></b>
+<b style="font-size: 20px;">Revenue = <%=  total_revenue %></b>
 <br>
 
 <div style="display: inline-block; vertical-align: top; margin-right: 20px; font-size: 13px;">
   <b>Apple</b><br>
-  <%= apple_revenue_week_ago %>
+  <%= apple_revenue %>
 </div>
 
 <div style="display: inline-block; vertical-align: top; margin-right: 20px; font-size: 13px;">
   <b>Stripe</b><br>
-  <%= stripe_revenue_week_ago %> <br>
+  <%= stripe_revenue %> <br>
 </div>
 
 <hr>
