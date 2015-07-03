@@ -1,1 +1,19 @@
-<h1>Hello Reports</h1>
+<h1>Past Week</h1>
+
+<%= date %>
+
+<b style="font-size: 20px;">Revenue = <%=  total_revenue_week_ago %></b>
+<br>
+
+<div style="display: inline-block; vertical-align: top; margin-right: 20px; font-size: 13px;">
+  <b>Apple</b><br>
+  <%= apple_revenue_week_ago %>
+</div>
+
+<div style="display: inline-block; vertical-align: top; margin-right: 20px; font-size: 13px;">
+  <b>Stripe</b><br>
+  <%= stripe_revenue_week_ago %> <br>
+</div>
+
+<hr>
+<br>

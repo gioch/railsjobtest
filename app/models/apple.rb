@@ -1,3 +1,3 @@
 class Apple < PremiumPlan
-  @@additional_fee_percent = 30
+  @@additional_fee = 30
 end

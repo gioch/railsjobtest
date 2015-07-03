@@ -1,3 +1,3 @@
 class Stripe < PremiumPlan
-  @@additional_fee_percent = 0
+  @@additional_fee = 0
 end
