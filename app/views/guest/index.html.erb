@@ -1,0 +1,4 @@
+<% if current_user %>
+  <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+<% end %>
+<p>hello guest. this is place for non admin users. go to "/admin" if you are admin :P'</p>
