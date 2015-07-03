@@ -19,6 +19,11 @@ class SeederController < ApplicationController
     Subscription.create(premium_plan_id: PremiumPlan.all.sample.id, start_date: '2015-06-11', end_date: '2015-08-11', user_id: User.all.sample.id)
     Subscription.create(premium_plan_id: PremiumPlan.all.sample.id, start_date: '2015-05-12', end_date: '2015-09-12', user_id: User.all.sample.id)
 
+    ## make first user super admin
+    user = User.find(1)
+    user.is_admin = true
+    user.save
+
     render html: 'Done'
   end
 end
